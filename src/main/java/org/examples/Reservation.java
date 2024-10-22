@@ -4,20 +4,15 @@ import java.time.LocalDate;
 
 public class Reservation {
     private Chambre chambre;
-    private Hotel hotel;
     private LocalDate arrival;
     private LocalDate departure;
-    private Client client; // Ajouter le client
+    private Client client;
 
-    public Reservation(Chambre chambre, Hotel hotel, LocalDate arrival, LocalDate departure, Client client) {
+    public Reservation(Chambre chambre, LocalDate arrival, LocalDate departure, Client client) {
         this.chambre = chambre;
-        this.hotel = hotel;
         this.arrival = arrival;
         this.departure = departure;
-        this.client = client; // Initialiser le client
-    }
-    public Hotel getHotel() {
-        return hotel;
+        this.client = client;
     }
 
     public Client getClient() {

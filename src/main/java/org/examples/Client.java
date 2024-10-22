@@ -3,11 +3,11 @@ package org.examples;
 public class Client {
     private String nom;
     private String prenom;
-    private long cartecredit;
-    public Client(String nom, String prenom, long cartecredit) {
+    private CarteBancaire cartebancaire;
+    public Client(String nom, String prenom, CarteBancaire cartebancaire) {
         this.nom = nom;
         this.prenom = prenom;
-        this.cartecredit = cartecredit;
+        this.cartebancaire = cartebancaire;
     }
 
     public String getNom() {
@@ -18,12 +18,12 @@ public class Client {
         this.nom = nom;
     }
 
-    public long getCartecredit() {
-        return cartecredit;
+    public CarteBancaire getCartebancaire() {
+        return cartebancaire;
     }
 
-    public void setCartecredit(long cartecredit) {
-        this.cartecredit = cartecredit;
+    public void setCartebancaire(CarteBancaire cartebancaire) {
+        this.cartebancaire = cartebancaire;
     }
 
     public String getPrenom() {

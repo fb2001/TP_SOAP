@@ -4,16 +4,14 @@ import java.util.ArrayList;
 
 public class Hotel {
     private String nom;
-    private String adress;
-    private int prix;
+    private Adress adress;
     private int nbretoiles;
     private ArrayList<Chambre> chambre;
 
-    public Hotel(int nbretoiles, ArrayList<Chambre> chambre, String adress, int prix, String nom) {
+    public Hotel(int nbretoiles, ArrayList<Chambre> chambre, Adress adress, String nom) {
         this.nbretoiles = nbretoiles;
         this.chambre = chambre;
         this.adress = adress;
-        this.prix = prix;
         this.nom = nom;
     }
 
@@ -25,21 +23,16 @@ public class Hotel {
         this.nom = nom;
     }
 
-    public String getAdress() {
+    public Adress getAdress() {
         return adress;
     }
 
-    public void setAdress(String adress) {
+    public void setAdress(Adress adress) {
         this.adress = adress;
     }
 
-    public int getPrix() {
-        return prix;
-    }
 
-    public void setPrix(int prix) {
-        this.prix = prix;
-    }
+
 
     public int getNbretoiles() {
         return nbretoiles;
